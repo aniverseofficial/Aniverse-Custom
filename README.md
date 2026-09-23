@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Aniverse — Shopify-style Full-Stack Admin + Storefront
+=======
+# Aniverse — Full-Stack Admin + Storefront
+>>>>>>> origin/main
 
 Aniverse storefront + MongoDB + Razorpay + a production-oriented back office inspired by the workflows users expect from modern ecommerce admin platforms.
 
