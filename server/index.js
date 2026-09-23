@@ -15,10 +15,7 @@ import { registerSupplierStockReport } from "./supplier-stock-report.js";
 dotenv.config();
 
 const app = express();
-// const PORT = Number(process.env.PORT || 4000);
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Aniverse full stack running on port ${PORT}`);
-});
+const PORT = Number(process.env.PORT || 4000);
 let client;
 let db;
 
@@ -1204,7 +1201,9 @@ async function start() {
   await ensureIndexIfMissing(await adminCol("activity"), { createdAt: -1 });
   await ensureIndexIfMissing(await adminCol("inventory"), { productId: 1, createdAt: -1 });
   await ensureIndexIfMissing(await adminCol("drafts"), { createdAt: -1 });
-  app.listen(PORT, () => console.log(`Aniverse full stack running on http://localhost:${PORT}`));
+  app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Aniverse full stack running on port ${PORT}`);
+});
 }
 async function shutdown(signal) { console.log(`${signal}: shutting down`); try { await client.close(); } finally { process.exit(0); } }
 process.on("SIGINT", () => shutdown("SIGINT")); process.on("SIGTERM", () => shutdown("SIGTERM"));
