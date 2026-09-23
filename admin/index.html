@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aniverse Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="login" class="login"><div class="login-card"><div class="logo"><b>A</b><span>ANIVERSE</span></div><p class="eyebrow">ADMIN CONTROL CENTER</p><h1>MANAGE<br><em>YOUR UNIVERSE.</em></h1><form id="loginForm"><input id="email" type="email" value="admin@aniverseofficial.in" placeholder="Admin email" required><input id="password" type="password" placeholder="Admin password" required><button>ENTER ADMIN →</button><small>Use the ADMIN_EMAIL / ADMIN_PASSWORD configured in .env for the initial admin login.</small></form></div></div>
+<div id="app" class="app hidden">
+<aside class="sidebar">
+  <div class="side-logo"><b>A</b><strong>ANIVERSE</strong></div>
+  <div class="admin-store"><span class="store-dot"></span><span>Online Store</span><button id="storeMenu" aria-label="Store menu">⌄</button></div>
+  <nav>
+    <p class="nav-label">STORE</p>
+    <button class="nav active" data-page="home"><span>⌂</span> Home</button>
+    <button class="nav" data-page="orders"><span>▤</span> Orders <b class="nav-count" id="openOrderCount"></b></button>
+    <button class="nav" data-page="drafts"><span>✎</span> Draft orders</button>
+    <button class="nav" data-page="products"><span>▦</span> Products</button>
+    <button class="nav" data-page="inventory"><span>◫</span> Inventory <b class="nav-count orange" id="lowStockCount"></b></button>
+    <button class="nav" data-page="categories"><span>◈</span> Collections</button>
+    <button class="nav" data-page="hero"><span>✦</span> Anime Hero</button>
+    <button class="nav" data-page="customers"><span>♙</span> Customers</button>
+    <p class="nav-label">GROWTH</p>
+    <button class="nav" data-page="analytics"><span>◒</span> Analytics</button>
+    <button class="nav" data-page="discounts"><span>◇</span> Discounts</button>
+    <button class="nav" data-page="files"><span>▧</span> Content & Files</button>
+    <p class="nav-label">OPERATIONS</p>
+    <button class="nav" data-page="supplier-stock-report"><span>◉</span> Supplier Stock Report <b class="nav-count orange" id="supplierNewCount"></b></button>
+    <button class="nav" data-page="shipping"><span>⌁</span> Shipping</button>
+    <button class="nav" data-page="staff"><span>♟</span> Staff & Permissions</button>
+    <button class="nav" data-page="settings"><span>⚙</span> Settings</button>
+  </nav>
+  <div class="side-bottom"><span id="adminEmail"></span><button id="logout">Sign out</button></div>
+</aside>
+<main class="main">
+<header><button id="mobileNav">☰</button><div class="header-title"><p class="eyebrow">ANIVERSE / ADMIN</p><h2 id="pageTitle">HOME</h2></div><div class="header-tools"><button id="globalSearchBtn" class="icon-btn" title="Search">⌕</button><button id="notificationsBtn" class="icon-btn" title="Notifications">◌</button><span class="status">● LIVE DATABASE</span><a href="/" target="_blank">VIEW STOREFRONT ↗</a></div></header>
+<div id="globalSearch" class="global-search hidden"><input id="globalSearchInput" placeholder="Search products, orders, customers…"><div id="globalSearchResults"></div></div>
+<section id="content"></section>
+</main></div>
+<script src="admin.js?v=20260918-si6"></script>
+</body></html>

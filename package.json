@@ -1,0 +1,30 @@
+{
+  "name": "aniverse-fullstack",
+  "version": "1.3.4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "smoke": "node scripts/smoke-test.mjs",
+    "test:deploy": "node scripts/deployment-test.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "git": "^0.1.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.20.0",
+    "multer": "^2.0.2",
+    "razorpay": "^2.9.6",
+    "sharp": "^0.34.3"
+  },
+  "allowScripts": {
+    "sharp@0.34.5": true
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

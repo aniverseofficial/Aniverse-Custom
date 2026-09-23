@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Aniverse — premium anime figures, collectibles and fandom essentials curated for collectors across India." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <title>Aniverse — Your Universe. Your Collection.</title>
+  <link rel="canonical" href="https://www.aniverseofficial.in/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aniverse — Your Universe. Your Collection." />
+  <meta property="og:description" content="Premium anime figures, collectibles and fandom essentials curated for collectors across India." />
+  <meta property="og:url" content="https://www.aniverseofficial.in/" />
+  <meta property="og:site_name" content="Aniverse" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Aniverse","url":"https://www.aniverseofficial.in/","email":"mailto:aniversemerchofficial@gmail.com","sameAs":["https://www.instagram.com/aniverseofficial.in/"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Aniverse","url":"https://www.aniverseofficial.in/","potentialAction":{"@type":"SearchAction","target":"https://www.aniverseofficial.in/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 fill=%27%23ff6500%27/%3E%3Ctext x=%2750%25%27 y=%2755%25%27 text-anchor=%27middle%27 font-family=%27Arial%27 font-size=%2738%27 font-weight=%27900%27%3EA%3C/text%3E%3C/svg%3E" />
+</head>
+<body class="theme-3d anime-selector-home">
+  <div class="announcement">FREE SHIPPING ON ORDERS ABOVE ₹999 <span>•</span> SHOP ANIVERSE <span>•</span> NEW DROPS EVERY WEEK</div>
+  <header class="site-header aniverse-3d-header" id="header">
+    <a class="brand" id="homeLink" href="#home" aria-label="Aniverse home"><span class="brand-mark">A</span><span>ANIVERSE</span></a>
+    <nav class="desktop-nav" aria-label="Primary">
+      <a href="#home">HOME</a>
+      <div class="nav-dropdown">
+        <button type="button" class="nav-dropdown-trigger" aria-expanded="false">CATEGORIES <span>⌄</span></button>
+        <div class="nav-dropdown-menu" role="menu">
+          <button type="button" data-category="Figurines">Figurines</button><button type="button" data-category="Premium Figures">Premium Figures</button><button type="button" data-category="Keychains">Keychains</button><button type="button" data-category="Katanas">Katanas</button><button type="button" data-category="Anime Lamps">Anime Lamps</button><button type="button" data-category="Merchandise">Merchandise</button><button type="button" data-category="Miniature Sets">Miniature Sets</button><button type="button" data-category="Funko Pop">Funko Pop</button><button type="button" data-category="Qposket">Qposket</button><button type="button" data-category="DIY Blocks">DIY Blocks</button><button type="button" class="menu-wide" data-open-categories>SHOP ALL CATEGORIES →</button>
+        </div>
+      </div>
+      <a href="#shop" data-catalog-mode="new">NEW ARRIVALS</a><a href="#shop" data-catalog-mode="preorder">PRE-ORDERS</a>
+    </nav>
+    <div class="header-search-pill" id="desktopSearchPill"><button type="button" id="searchBtn" aria-label="Search"><span>Search anime, figure, brand...</span><b>⌕</b></button></div>
+    <div class="header-actions"><button class="icon-btn" id="wishlistBtn" type="button" aria-label="Wishlist" aria-controls="shop">♡<span class="count" id="wishCount">0</span></button><button class="icon-btn" id="cartBtn" type="button" aria-label="Cart" aria-controls="cartDrawer" aria-expanded="false">🛒<span class="count" id="cartCount">0</span></button><button class="icon-btn account-btn" id="accountBtn" type="button" aria-label="Account">♙</button><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button></div>
+  </header>
+
+  <main>
+    <section class="aniverse-selector aniverse-home-selector" id="home" aria-label="Choose your anime universe">
+      <div class="selector-page">
+        <div class="selector-eyebrow">ANIVERSE / THE ANIME UNIVERSE</div>
+        <h1 class="selector-title">Choose your world.</h1>
+        <p class="selector-intro">Explore premium anime collections through an immersive selector. Hover or tap a universe to expand it and reveal the collection.</p>
+        <div class="anime-scroller">
+          <button class="anime-arrow prev" id="animeHeroPrev" type="button" aria-label="Previous anime">‹</button>
+          <div class="anime-showcase" id="animeShowcase">
+            <div class="hero-loading" aria-live="polite">LOADING ANIME WORLDS…</div>
+          </div>
+          <button class="anime-arrow next" id="animeHeroNext" type="button" aria-label="Next anime">›</button>
+        </div>
+        <div class="selector-footer"><span>© 2026 Aniverse. All rights reserved.</span><span class="selector-brand">ANIVERSE</span></div>
+      </div>
+    </section>
+
+    <section class="benefit-strip"><div><span class="benefit-icon">♧</span><div><b>FREE SHIPPING</b><small>On orders above ₹999</small></div></div><div><span class="benefit-icon">◇</span><div><b>SECURE PAYMENTS</b><small>100% safe & trusted</small></div></div><div><span class="benefit-icon">▣</span><div><b>ORIGINAL PRODUCTS</b><small>Authentic & verified</small></div></div><div><span class="benefit-icon">♕</span><div><b>FOR TRUE FANS</b><small>Built by anime lovers</small></div></div></section>
+    <section class="banpresto-banner dark-home-section" aria-label="Official Banpresto collection">
+      <div class="banpresto-banner-inner">
+        <div class="banpresto-hero-copy">
+          <span class="banpresto-kicker">OFFICIAL COLLECTOR COLLECTION</span>
+          <h2>ANIVERSE × <em>BANPRESTO</em></h2>
+          <p>Authentic licensed figures from the anime series collectors love, curated for your shelf.</p>
+          <button class="btn btn-primary" type="button" data-category="Banpresto">SHOP NOW →</button>
+        </div>
+        <div class="banpresto-hero-art" aria-hidden="true"></div>
+      </div>
+    </section>
+    <section class="dark-home-section banpresto-section" id="banpresto">
+      <div class="dark-section-head banpresto-head"><div><p class="eyebrow">OFFICIAL BANPRESTO</p><h2>BANPRESTO <em>FIGURES</em></h2><p class="banpresto-subtitle">Handpicked Banpresto figures for anime collectors.</p></div><div class="carousel-controls banpresto-controls"><button class="section-arrow" id="banprestoPrev" type="button" aria-label="Previous Banpresto products">←</button><button class="section-arrow" id="banprestoNext" type="button" aria-label="Next Banpresto products">→</button><button class="text-link light-link" type="button" data-category="Banpresto">VIEW ALL →</button></div></div>
+      <div class="product-rail banpresto-rail" id="banprestoGrid" role="list" aria-label="Banpresto figures"></div>
+    </section>
+    <section class="dark-home-section featured-section" id="featured"><div class="dark-section-head"><div><p class="eyebrow">THE COLLECTION</p><h2>FEATURED <em>FIGURES</em></h2></div><div class="carousel-controls"><button class="section-arrow" id="featuredPrev" type="button" aria-label="Previous featured products">←</button><button class="section-arrow" id="featuredNext" type="button" aria-label="Next featured products">→</button><button class="text-link light-link" type="button" data-catalog-mode="all">VIEW ALL →</button></div></div><div class="product-rail featured-rail" id="productGrid" role="list" aria-label="Featured figures"></div></section>
+    <section class="dark-home-section why-dark" id="why"><div class="dark-section-head"><div><p class="eyebrow">MADE FOR COLLECTORS</p><h2>WHY CHOOSE <em>ANIVERSE?</em></h2></div></div><div class="why-dark-grid"><article><span>01</span><h3>CURATED</h3><p>Handpicked figures and collectibles from the anime worlds fans love.</p></article><article><span>02</span><h3>AUTHENTIC</h3><p>Original products and carefully verified collectibles for your shelf.</p></article><article><span>03</span><h3>PROTECTED</h3><p>Careful packaging and collector-first handling from our store to your door.</p></article><article><span>04</span><h3>SECURE</h3><p>A smooth shopping and checkout experience built around your collection.</p></article></div></section>
+  </main>
+
+<footer>
+    <div class="footer-brand"><span class="brand-mark">A</span><div><strong>ANIVERSE</strong><p>YOUR UNIVERSE. YOUR COLLECTION.</p></div></div>
+    <div class="footer-grid">
+      <div><h4>SHOP</h4><a href="#shop">All Products</a><a href="#categories">All Categories</a><a href="#home">Anime Worlds</a><a href="#shop" data-catalog-mode="new">New Arrivals</a><a href="#shop" data-catalog-mode="preorder">Pre-Orders</a></div>
+      <div><h4>HELP</h4><a href="/contact.html">Contact Us</a><a href="/shipping-policy.html">Shipping & Delivery</a><a href="/returns-refunds.html">Returns & Refunds</a><a href="/faq.html">FAQ</a></div>
+      <div><h4>CONNECT</h4><a href="https://www.instagram.com/aniverseofficial.in/" target="_blank" rel="noreferrer">@ANIVERSEOFFICIAL.IN ↗</a><a href="mailto:aniversemerchofficial@gmail.com">EMAIL ANIVERSE ↗</a></div>
+      <div><h4>ANIVERSE</h4><p>Anime figures, collectibles and more — curated for fans and collectors.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Aniverse</span><span><a href="/shipping-policy.html">Shipping</a> · <a href="/returns-refunds.html">Returns & Refunds</a> · <a href="/privacy-policy.html">Privacy</a> · <a href="/terms.html">Terms</a> · <a href="/contact.html">Contact</a></span></div>
+  </footer>
+
+  <div class="search-panel" id="searchPanel" role="region" aria-label="Product search" aria-hidden="true">
+    <button class="close" id="closeSearch" type="button" aria-label="Close search">×</button>
+    <p class="eyebrow">SEARCH THE ANIVERSE</p>
+    <input id="searchInput" type="search" placeholder="Search anime, figures, collectibles..." aria-label="Search products" autocomplete="off">
+    <div id="searchResults" aria-live="polite"></div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">ANIVERSE</p><h3>YOUR CART</h3></div><button class="close" id="closeCart" type="button" aria-label="Close cart">×</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-summary"><div><span>SUBTOTAL</span><strong id="subtotal">₹0</strong></div><div><span>SHIPPING</span><strong id="shipping">₹0</strong></div><div class="cart-total"><span>TOTAL</span><strong id="cartTotal">₹0</strong></div><small class="shipping-note" id="shippingNote">FREE SHIPPING ABOVE ₹999</small><button id="checkoutBtn" class="btn btn-primary full" type="button">PROCEED TO CHECKOUT →</button></div>
+  </aside>
+  <div class="overlay" id="overlay" aria-hidden="true"></div>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation menu" aria-hidden="true">
+    <button class="close" id="closeMenu" type="button" aria-label="Close menu">×</button>
+    <a href="#home">HOME</a><button type="button" data-open-categories>SHOP ALL CATEGORIES</button><button type="button" data-category="Figurines">FIGURINES</button><button type="button" data-category="Keychains">KEYCHAINS</button><button type="button" data-category="Katanas">KATANAS</button><a href="#shop" data-catalog-mode="new">NEW ARRIVALS</a><a href="#shop" data-catalog-mode="preorder">PRE-ORDERS</a><a href="#home">ANIME WORLDS</a>
+  </div>
+
+  <section class="categories-page" id="categoriesPage" role="dialog" aria-modal="true" aria-label="All categories" aria-hidden="true">
+    <div class="categories-page-inner">
+      <div class="categories-page-top"><div><p class="eyebrow">ANIVERSE / SHOP</p><h2>ALL <em>CATEGORIES</em></h2><p>Browse every collection and category available in the store.</p></div><button class="close" id="closeCategories" type="button" aria-label="Close categories">×</button></div>
+      <div class="category-directory" id="categoryDirectory" role="list"></div>
+    </div>
+  </section>
+
+  <section class="shop-overlay" id="shop" role="dialog" aria-modal="true" aria-label="Product catalogue" aria-hidden="true">
+    <div class="world-loader" id="worldLoader" aria-hidden="true"><div class="world-loader-inner"><div class="world-loader-mark">ANIVERSE</div><div class="world-loader-title">LOADING YOUR WORLD</div><div class="world-loader-line"><span></span></div><small>DIFFERENT WORLDS. ONE ANIVERSE.</small></div></div>
+    <div class="shop-inner">
+      <div class="shop-top"><div><p class="eyebrow">THE FULL CATALOGUE</p><h2 id="shopTitle">ALL PRODUCTS</h2><div class="anime-theme-subtitle" id="animeThemeSubtitle" aria-live="polite"></div></div><button class="close" id="closeShop" type="button" aria-label="Close catalogue">×</button></div>
+      <div class="shop-tools"><div class="catalog-search"><button id="catalogSearchBtn" class="catalog-search-btn" type="button" aria-label="Search this collection" title="Search this collection">⌕</button><input id="shopSearch" hidden placeholder="Search this collection..." aria-label="Search this collection" autocomplete="off"></div><label class="sort-control" for="sort"><span>SORT BY</span><select id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="new">Newest</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option></select></label></div>
+      <div class="catalog-context" id="catalogContext"></div><div class="product-grid" id="shopGrid" role="list"></div>
+    </div>
+  </section>
+
+  <div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-label="Product details" aria-hidden="true"><div class="product-backdrop" id="productBackdrop"></div><div class="product-box"><button class="close" id="productClose" type="button" aria-label="Close product details">×</button><div id="productDetail"></div></div></div>
+
+
+  <div class="account-modal" id="accountModal" role="dialog" aria-modal="true" aria-label="Customer account" aria-hidden="true">
+    <div class="account-backdrop" id="accountBackdrop"></div>
+    <div class="account-box">
+      <button class="close" id="accountClose" type="button" aria-label="Close account">×</button>
+      <div id="accountContent"></div>
+    </div>
+  </div>
+
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Checkout" aria-hidden="true">
+  <div class="checkout-backdrop" id="checkoutBackdrop"></div>
+  <div class="checkout-box">
+    <button class="checkout-close" id="checkoutClose" type="button" aria-label="Close checkout">×</button>
+    <div class="checkout-progress" aria-label="Checkout progress"><span class="checkout-step active" id="checkoutStepDetails">1. DETAILS</span><i></i><span class="checkout-step" id="checkoutStepReview">2. REVIEW ORDER</span></div>
+    <section id="checkoutDetailsStep" class="checkout-step-panel">
+      <div class="eyebrow">ANIVERSE CHECKOUT</div>
+      <h2>Complete your order.</h2>
+      <p class="checkout-note">Enter your delivery and contact details. You will review your complete order before opening Razorpay.</p>
+      <form id="checkoutForm" aria-label="Checkout details">
+        <div class="checkout-grid">
+          <label>Name<input name="name" required autocomplete="name"></label>
+          <label>Email<input name="email" type="email" required autocomplete="email"></label>
+          <label>Phone<input name="phone" required autocomplete="tel" inputmode="tel"></label>
+          <label>City<input name="city" autocomplete="address-level2"></label>
+          <label class="wide">Address<textarea name="address" rows="3" autocomplete="street-address"></textarea></label>
+        </div>
+        <button class="btn btn-primary full" id="reviewOrderBtn" type="submit">REVIEW ORDER →</button>
+        <div id="checkoutStatus" class="checkout-status"></div>
+      </form>
+    </section>
+
+    <section id="checkoutReviewStep" class="checkout-step-panel" hidden>
+      <div class="eyebrow">ORDER REVIEW</div>
+      <h2>Review your order.</h2>
+      <p class="checkout-note">Check your delivery details, apply your coupon, and confirm the final amount before continuing to Razorpay.</p>
+      <div class="review-customer" id="reviewCustomer"></div>
+      <div class="review-items" id="reviewItems"></div>
+      <div class="review-coupon">
+        <label for="reviewDiscountCode">APPLY DISCOUNT / COUPON</label>
+        <div class="discount-row"><input id="reviewDiscountCode" placeholder="Enter coupon code" autocomplete="off"><button type="button" id="applyReviewDiscount">APPLY</button></div>
+        <div id="reviewDiscountStatus" class="checkout-status"></div>
+      </div>
+      <div class="review-totals">
+        <div><span>SUBTOTAL</span><strong id="reviewSubtotal">₹0</strong></div>
+        <div id="reviewDiscountLine" hidden><span>DISCOUNT <b id="reviewDiscountCodeLabel"></b></span><strong id="reviewDiscount">−₹0</strong></div>
+        <div><span>SHIPPING</span><strong id="reviewShipping">₹0</strong></div>
+        <div class="review-grand-total"><span>TOTAL TO PAY</span><strong id="reviewTotal">₹0</strong></div>
+      </div>
+      <div class="review-actions">
+        <button type="button" class="btn review-back" id="backToDetails">← EDIT DETAILS</button>
+        <button type="button" class="btn btn-primary" id="payNowBtn">PROCEED TO RAZORPAY →</button>
+      </div>
+      <div id="reviewPaymentStatus" class="checkout-status"></div>
+    </section>
+  </div>
+</div>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="app.js"></script>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
