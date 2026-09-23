@@ -15,7 +15,10 @@ import { registerSupplierStockReport } from "./supplier-stock-report.js";
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT || 4000);
+// const PORT = Number(process.env.PORT || 4000);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Aniverse full stack running on port ${PORT}`);
+});
 let client;
 let db;
 
